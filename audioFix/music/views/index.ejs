@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul id="list">
+    	<% music.forEach(function(name){ %>
+    		<li title="<%= name %>"><%= name %></li>
+    	<% }) %>
+    </ul>
+    <p>
+    	Volume <input type="range" id="volume" min="0" max="100" value="50" step="5">
+    </p>
+    <div id="container">
+    	
+    </div>
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+  </body>
+</html>
